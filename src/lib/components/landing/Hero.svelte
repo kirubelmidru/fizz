@@ -1,10 +1,17 @@
 <script>
-import Splash from "$lib/components/Splash.svelte";
-</script>
+import inView from "$lib/scripts/inView.js";
 
-<Splash/>
-<div class="relative w-screen h-screen">
-    <div class="p-32 flex flex-col">
-	<h1 class="text-center text-[200px] italic">fizz</h1>
-    </div>
+import { fade } from 'svelte/transition';
+
+let animated = false;
+</script>
+<div
+    use:inView={{ threshold: 0.5 }}
+    on:enter={() => animated = true } class="relative h-screen p-24">
+    {#if animated}
+	<div transition:fade={{ delay: 250, duration: 300 }} class="flex flex-col">
+	    <h1 class="text-center text-[300px] italic">fizz</h1>
+	</div>
+    {/if}
 </div>
+

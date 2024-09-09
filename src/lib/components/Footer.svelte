@@ -6,7 +6,7 @@
     ];
 </script>
 
-<footer class="p-14 flex justify-between min-h-screen bg-chinese-black">
+<footer class="p-14 flex h-screen justify-between bg-chinese-black">
     <h2 class="text-[300px] -mt-24 text-yellow archia">Carbon</h2>
     <div class="flex flex-col">
 	{#each tabs as tab}

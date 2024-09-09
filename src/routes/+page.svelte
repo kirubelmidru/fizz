@@ -1,5 +1,9 @@
 <script>
-import Main from "$lib/layout/Main.svelte";
+    import Hero from "$lib/components/landing/Hero.svelte";
+    import About from "$lib/components/landing/About.svelte";
 </script>
 
-<Main/>
+<div class="flex flex-col gap-8">
+    <Hero/>
+    <About/>
+</div>

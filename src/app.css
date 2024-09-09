@@ -27,44 +27,7 @@ h1,h2,span {
     font-family: 'archia';
 }
 
-span {
-    transform: translatey(0) rotate(0);
-    opacity:1;
-    transition: translate 1s cubic-bezier(.34,1.56,.64,1),opacity 1s; 
-}
-
-span:hover {
-    transform: translateY(50%) rotate(10deg);
-    opacity:0;
-
-}
-
-.bg-front {
-    transform-origin: bottom;
-    animation: scale 3.5s cubic-bezier(0.76,0,0.24,1);
-}
-
-.bg-back {
-    transform-origin: bottom;
-    animation: scale 3s cubic-bezier(0.76,0,0.24,1);
-}
-
-@keyframes scale {
-from {
-    transform: scaleY(0);
-}
-to {
-    transform: scaleY(1);
-}
-}
-
-@keyframes text-reveal {
-from {
-    transform: translateY(50%) rotate(10deg);
-    opacity: 0;
-}
-to {
-    transform: translateY(0) rotate(0);
-    opacity: 1;
-}
+.alegreya {
+    font-family: 'Alegreya', serif;
+    font-weight: 900;
 }
